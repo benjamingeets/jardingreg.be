@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ô Jargin de Greg - Tournai</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="">
+        <h1>Ô Jardin de Greg</h1>
+        <h2>Entretien d'espaces verts dans le Tournaisis</h2>
+        <a class="mail" href="">
+            <div class="bouton">
+                <p>Me contacter</p>
+            </div>
+        </a>
+    </header>
+    <div class="container">
+        <div class="services">
+            <div class="card">
+                <div class="image">
+                    <img src="assets/entretien.svg" alt="">
+                </div>
+                <h3>Entretien de vos espaces verts</h3>
+                <ul>
+                    <li>Taille de haies, coupe d'arbres, abatage</li>
+                    <li>Plantation diverses: Haites (charmes/charmilles/sapins/érables/...), arbres fruitiers, bambous non-traçants, fleurs,...</li>
+                    <li>Tonte de pelouse, débrouissaillage</li>
+                    <li>Entretien de parterre</li>
+                    <li>Placement de bâches et écorces/graviers/...</li>
+                    <li>Evacucation de déchats au besoin</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="assets/boite.svg" alt="">
+                </div>
+                <h3>Vide grenier, cave, magasin</h3>
+                <ul>
+                    <li>Appartemment</li>
+                    <li>Bureau</li>
+                    <li>Garage</li>
+                    <li>Entrepot</li>
+                    <li>Etc</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="assets/bois.svg" alt="">
+                </div>
+                <h3>Vente de bois de chauffage</h3>
+            </div>
+        </div>
+        <div class="contact">
+            <div>
+                <div class="left">
+                    <p>Me contacter</p>
+                    <p id="partel">Par téléphone ou par e-mail</p>
+                    <p id="tel"><a href="tel:+32492131425">+32 492 13 14 25</a></p>
+                    <p><a class="mail" href="">Jardin.Greg@yahoo.com</a></p>
+                </div>
+                <div class="right">
+                    <img src="assets/wall.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p><a href="https://visualkraken.be">Site internet réalisé par VisualKraken</a></p>
+    </footer>
+    <script>
+        const bouton = document.querySelector(".bouton")
+
+        bouton.addEventListener("click", ()=>{
+            document.querySelector(".mail").href = "mailto:jardin.greg@yahoo.com"
+        })
+    </script>
+</body>
+</html>

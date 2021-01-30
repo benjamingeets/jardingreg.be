@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Roboto";
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/Roboto-Regular.ttf");
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+header {
+  color: white;
+  background-image: url("/assets/banc.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -200px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 85vh;
+  overflow-y: hidden;
+}
+
+header img {
+  width: 150px;
+}
+
+header h1 {
+  margin: 100px 0 20px 0;
+}
+
+header .bouton {
+  margin-top: 40px;
+  border: 2px solid white;
+  background: linear-gradient(87.17deg, #40C764 0.03%, #0F9132 100%);
+  border-radius: 0.5em;
+  padding: 20px 60px;
+  font-size: 1.6em;
+  color: white;
+  cursor: pointer;
+}
+
+header .bouton:hover {
+  -webkit-transform: scale(1.1) rotate(1deg);
+          transform: scale(1.1) rotate(1deg);
+}
+
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 150px;
+  color: black;
+}
+
+.services .card {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 23px -1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 23px -1px rgba(0, 0, 0, 0.25);
+  width: 20%;
+  border-radius: 1em;
+  padding: 35px;
+  text-align: center;
+}
+
+.services .card .image {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.services .card .image img {
+  width: 40%;
+}
+
+.services .card h3 {
+  margin-top: 20px;
+  font-size: 0.9em;
+  height: 30px;
+}
+
+.services .card ul {
+  text-align: left;
+}
+
+.services .card ul li {
+  color: #9F9F9F;
+  margin-top: 5px;
+  font-size: 0.8em;
+}
+
+.services .card ul li:before {
+  content: '- ';
+}
+
+.contact {
+  margin-top: 150px;
+}
+
+.contact div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact div .left {
+  background: linear-gradient(294.5deg, #27813F 0%, #10C140 100%);
+  -webkit-box-shadow: 0px 0px 83px 7px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 83px 7px rgba(0, 0, 0, 0.25);
+  color: white;
+  padding: 50px;
+  border-radius: 1em;
+  margin-right: -100px;
+  z-index: 1;
+  height: 200px;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contact div .left p {
+  font-size: 1.5em;
+}
+
+.contact div .left p a {
+  color: white;
+}
+
+.contact div .left #partel {
+  font-size: 1em;
+  color: #DDDDDD;
+}
+
+.contact div .right {
+  z-index: 0;
+}
+
+.contact div .right img {
+  width: 700px;
+  border-radius: 1em;
+}
+
+footer {
+  margin-top: 100px;
+  height: 100px;
+  background: #404040;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+footer p {
+  margin-right: 30px;
+}
+
+footer p a {
+  color: white;
+}
+
+footer p a:hover {
+  color: gray;
+}
+
+@media (max-width: 1500px) {
+  .container {
+    width: 80%;
+  }
+  header {
+    background-position-y: 0px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 90%;
+  }
+  header h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+  header h2 {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  header .bouton {
+    padding: 10px 30px;
+    font-size: 1em;
+  }
+  .services {
+    margin-top: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .services .card {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .services .card .image img {
+    height: 100%;
+  }
+  .contact div .left {
+    margin-right: 0;
+    width: 100%;
+    padding: 20px;
+  }
+  .contact div .right {
+    display: none;
+  }
+  footer p {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  header h1 {
+    font-size: 2em;
+  }
+  .contact {
+    margin: 40px 0 0 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
