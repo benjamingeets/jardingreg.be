@@ -11,6 +11,7 @@
 @font-face {
   font-family: "Roboto";
   src: url("/assets/Roboto-Regular.ttf");
+  font-display: swap;
 }
 
 .container {
